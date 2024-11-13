@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Application</title>
+    </head>
+
+    <body onload="nextQuestion()">
+
+        <style>
+            body{
+
+                background-color:white;
+                color: #df5000;
+                border: 1px solid black;
+                box-shadow: 0 0 10px black;
+                width: 60%;
+
+            }
+        </style>
+
+        <div>
+            <h1 style="font-size: 30px;text-align: center;">Quiz App</h1>
+            <h1 id="timer" style="text-align: center;">2:00</h1>
+        </div>
+        <div>
+            <p id="ques"></p>
+            <input
+                value="1"
+                onclick="clicked()"
+                type="radio"
+                class="options"
+                name="options"
+                id=""
+            >
+            <label id="opt1" for=""></label>
+            <br>
+            <br>
+            <input
+                value="2"
+                onclick="clicked()"
+                type="radio"
+                class="options"
+                name="options"
+                id=""
+            >
+            <label id="opt2" for=""></label>
+            <br>
+            <br>
+            <input
+                value="3"
+                onclick="clicked()"
+                type="radio"
+                class="options"
+                name="options"
+                id=""
+            >
+            <label id="opt3" for=""></label>
+            <br>
+            <br>
+            <button style="color: #df5000; background-color: black; border: none; width: 10%; margin-left: 50px;margin-bottom: 10px; border-radius: 5px;" id="btn" disabled onclick="nextQuestion()">Next</button>
+        </div>
+    
+        <script src="quiz.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    </body>
+</html>
